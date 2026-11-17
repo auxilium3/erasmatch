@@ -1,0 +1,23 @@
+# Hand-labelled equivalences between the two fictional example catalogs.
+# "+" joins a bundle of host courses. Several accepted answers = any of them counts.
+home_university: UNIEX
+host_university: UEJ
+pairs:
+  - home: RETI
+    accept: ["RC+TDR"]
+  - home: BASIDATI
+    accept: ["BD+ABD", "BD"]
+  - home: CALCOLATORI
+    accept: ["AC"]
+  - home: SO
+    accept: ["SSOO"]
+  - home: INGSW
+    accept: ["ISW"]
+  - home: IA
+    accept: ["SI", "AA+SI"]
+  - home: ANALISI1
+    accept: ["CAL"]
+  - home: MULTIMEDIA
+    accept: ["TM"]
+  - home: WEB
+    accept: ["DAW"]

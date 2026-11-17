@@ -1,0 +1,120 @@
+# FICTIONAL example catalog for demos and tests. Not the syllabus of any real university.
+university:
+  code: UNIEX
+  name: Università degli Studi di Esempio
+  country: IT
+  language: it
+
+courses:
+  - code: RETI
+    title: Reti di Calcolatori
+    ects: 9
+    description: Principi e protocolli delle reti di calcolatori e di Internet.
+    topics:
+      - Architettura a livelli ISO/OSI e TCP/IP
+      - "Livello applicazione: HTTP, DNS, posta elettronica"
+      - Programmazione con i socket
+      - "Livello di trasporto: UDP e TCP, controllo di congestione"
+      - "Livello di rete: indirizzamento IP, subnetting e NAT"
+      - Algoritmi di instradamento link-state e distance-vector
+      - "Livello di collegamento: Ethernet, switch e ARP"
+      - Reti wireless e Wi-Fi
+      - Sicurezza di rete e crittografia di base
+
+  - code: BASIDATI
+    title: Basi di Dati
+    ects: 9
+    description: Progettazione e interrogazione di basi di dati relazionali.
+    topics:
+      - Modello relazionale
+      - Algebra relazionale
+      - "Linguaggio SQL: interrogazioni, join e aggregazioni"
+      - Progettazione concettuale con il modello Entità-Relazione
+      - Progettazione logica e normalizzazione
+      - Transazioni e proprietà ACID
+      - Controllo della concorrenza
+      - Indici e strutture di accesso
+      - Basi di dati NoSQL
+
+  - code: CALCOLATORI
+    title: Calcolatori Elettronici
+    ects: 9
+    description: Architettura dei calcolatori e programmazione a basso livello.
+    topics:
+      - Rappresentazione dell'informazione e aritmetica binaria
+      - Architettura di von Neumann
+      - Set di istruzioni ARM e programmazione assembly
+      - Subroutine, stack e chiamate a funzione
+      - Pipeline e hazard
+      - Gerarchia di memoria e cache
+      - Memoria virtuale
+      - Dispositivi di I/O e interruzioni
+
+  - code: SO
+    title: Sistemi Operativi
+    ects: 9
+    description: Struttura e funzionamento dei sistemi operativi moderni.
+    topics:
+      - Processi e thread
+      - Scheduling della CPU
+      - "Sincronizzazione: semafori, mutex e monitor"
+      - Deadlock
+      - Gestione della memoria e paginazione
+      - File system
+      - Programmazione concorrente in C su Linux
+      - Virtualizzazione e container
+
+  - code: INGSW
+    title: Ingegneria del Software
+    ects: 6
+    description: Metodi e strumenti per lo sviluppo di software di qualità.
+    topics:
+      - Ciclo di vita del software e modelli di processo
+      - Metodologie agili e Scrum
+      - Analisi dei requisiti
+      - "Modellazione UML: casi d'uso, classi e sequenza"
+      - Design pattern
+      - Testing di unità e di integrazione
+
+  - code: IA
+    title: Fondamenti di Intelligenza Artificiale
+    ects: 6
+    description: Introduzione all'intelligenza artificiale e all'apprendimento automatico.
+    topics:
+      - Agenti intelligenti
+      - Ricerca euristica e algoritmo A*
+      - Giochi e algoritmo minimax
+      - Logica e rappresentazione della conoscenza
+      - Apprendimento automatico supervisionato
+      - Reti neurali e discesa del gradiente
+
+  - code: ANALISI1
+    title: Analisi Matematica I
+    ects: 9
+    description: >-
+      Limiti e continuità di funzioni. Calcolo differenziale e derivate.
+      Calcolo integrale. Successioni e serie numeriche. Equazioni differenziali ordinarie.
+
+  - code: MULTIMEDIA
+    title: Elaborazione dei Segnali Multimediali
+    ects: 6
+    description: Rappresentazione, compressione e trasmissione di audio, immagini e video.
+    topics:
+      - Campionamento e quantizzazione
+      - Trasformata di Fourier discreta
+      - Compressione audio
+      - Compressione di immagini JPEG
+      - Codifica video
+      - Streaming e trasmissione in tempo reale
+
+  - code: WEB
+    title: Tecnologie Web
+    ects: 6
+    description: Sviluppo di applicazioni web lato client e lato server.
+    topics:
+      - HTML e CSS
+      - JavaScript e DOM
+      - Protocollo HTTP e API REST
+      - Sviluppo backend
+      - Persistenza con database
+      - Sicurezza delle applicazioni web

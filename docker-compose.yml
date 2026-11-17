@@ -1,0 +1,57 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: erasmatch
+      POSTGRES_PASSWORD: erasmatch
+      POSTGRES_DB: erasmatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U erasmatch"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ERASMATCH_DATABASE_URL: postgresql+psycopg://erasmatch:erasmatch@db:5432/erasmatch
+      ERASMATCH_EMBEDDER: ${ERASMATCH_EMBEDDER:-ollama}
+      ERASMATCH_EMBEDDING_MODEL: ${ERASMATCH_EMBEDDING_MODEL:-bge-m3}
+      ERASMATCH_LLM: ${ERASMATCH_LLM:-ollama}
+      ERASMATCH_LLM_MODEL: ${ERASMATCH_LLM_MODEL:-qwen2.5:7b-instruct}
+      ERASMATCH_EXPLANATION_LANGUAGE: ${ERASMATCH_EXPLANATION_LANGUAGE:-en}
+      # Ollama running on the host machine (simplest way to use your GPU).
+      # With the "ollama" profile below, set this to http://ollama:11434 instead.
+      ERASMATCH_OLLAMA_URL: ${ERASMATCH_OLLAMA_URL:-http://host.docker.internal:11434}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+
+  # Optional: `docker compose --profile ollama up` runs Ollama in a container too.
+  ollama:
+    image: ollama/ollama
+    profiles: ["ollama"]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    # NVIDIA GPU (needs the NVIDIA Container Toolkit / Docker Desktop with WSL2):
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+volumes:
+  pgdata:
+  ollama:

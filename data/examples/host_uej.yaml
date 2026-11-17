@@ -1,0 +1,174 @@
+# FICTIONAL example catalog for demos and tests. Not the syllabus of any real university.
+university:
+  code: UEJ
+  name: Universidad de Ejemplo
+  country: ES
+  language: es
+
+courses:
+  - code: RC
+    title: Redes de Computadores
+    ects: 6
+    description: Fundamentos de las redes de computadores y de los protocolos de Internet.
+    topics:
+      - Modelo de capas OSI y TCP/IP
+      - "Nivel de aplicación: HTTP, DNS y correo electrónico"
+      - Programación con sockets
+      - "Nivel de transporte: UDP y TCP, control de congestión"
+      - Redes inalámbricas Wi-Fi
+
+  - code: TDR
+    title: Transmisión de Datos y Redes
+    ects: 6
+    description: Transmisión de datos, nivel de red y nivel de enlace.
+    topics:
+      - Medios de transmisión y codificación de señales
+      - "Nivel de red: direccionamiento IP, subredes y NAT"
+      - Algoritmos de encaminamiento de estado de enlace y vector distancia
+      - "Nivel de enlace: Ethernet, conmutadores y ARP"
+      - Seguridad en redes y criptografía básica
+
+  - code: BD
+    title: Bases de Datos
+    ects: 6
+    description: Diseño y consulta de bases de datos relacionales.
+    topics:
+      - Modelo relacional
+      - Álgebra relacional
+      - "Lenguaje SQL: consultas, joins y agregaciones"
+      - Diseño conceptual con el modelo Entidad-Relación
+      - Diseño lógico y normalización
+      - Índices y estructuras de acceso
+
+  - code: ABD
+    title: Administración de Bases de Datos
+    ects: 6
+    description: Gestión avanzada de sistemas de bases de datos.
+    topics:
+      - Transacciones y propiedades ACID
+      - Control de concurrencia
+      - Recuperación ante fallos
+      - Optimización de consultas
+      - Bases de datos NoSQL y distribuidas
+
+  - code: AC
+    title: Computer Architecture
+    ects: 6
+    language: en
+    description: Computer organisation and low-level programming (taught in English).
+    topics:
+      - Data representation and binary arithmetic
+      - Von Neumann architecture
+      - ARM instruction set and assembly programming
+      - Subroutines, stack and function calls
+      - Pipelining and hazards
+      - Memory hierarchy and caches
+      - Virtual memory
+      - Input/output devices and interrupts
+
+  - code: SSOO
+    title: Sistemas Operativos
+    ects: 6
+    description: Estructura y funcionamiento de los sistemas operativos.
+    topics:
+      - Procesos e hilos
+      - Planificación de la CPU
+      - "Sincronización: semáforos, mutex y monitores"
+      - Interbloqueos (deadlock)
+      - Gestión de memoria y paginación
+      - Sistemas de ficheros
+
+  - code: ISW
+    title: Ingeniería del Software
+    ects: 6
+    description: Métodos y herramientas para el desarrollo de software.
+    topics:
+      - Ciclo de vida del software y modelos de proceso
+      - Metodologías ágiles y Scrum
+      - Ingeniería de requisitos
+      - "Modelado UML: casos de uso, clases y secuencia"
+      - Patrones de diseño
+      - Pruebas unitarias y de integración
+
+  - code: SI
+    title: Sistemas Inteligentes
+    ects: 6
+    description: Técnicas clásicas de inteligencia artificial.
+    topics:
+      - Agentes inteligentes
+      - Búsqueda heurística y algoritmo A*
+      - Juegos y algoritmo minimax
+      - Lógica y representación del conocimiento
+
+  - code: AA
+    title: Machine Learning
+    ects: 6
+    language: en
+    description: Supervised and unsupervised learning (taught in English).
+    topics:
+      - "Supervised learning: regression and classification"
+      - Decision trees
+      - Neural networks and gradient descent
+      - Model evaluation and cross-validation
+      - Clustering
+
+  - code: CAL
+    title: Cálculo
+    ects: 6
+    description: >-
+      Límites y continuidad de funciones. Cálculo diferencial y derivadas.
+      Cálculo integral. Series numéricas.
+
+  - code: ALG
+    title: Álgebra Lineal
+    ects: 6
+    description: Fundamentos de álgebra lineal para ingeniería.
+    topics:
+      - Matrices y determinantes
+      - Sistemas de ecuaciones lineales
+      - Espacios vectoriales
+      - Valores y vectores propios
+
+  - code: TM
+    title: Tecnologías Multimedia
+    ects: 6
+    description: Representación, compresión y transmisión de contenidos multimedia.
+    topics:
+      - Muestreo y cuantificación
+      - Transformada discreta de Fourier
+      - Compresión de audio
+      - Compresión de imágenes JPEG
+      - Codificación de vídeo
+      - Streaming y transmisión en tiempo real
+
+  - code: DAW
+    title: Desarrollo de Aplicaciones Web
+    ects: 6
+    description: Desarrollo de aplicaciones web en cliente y servidor.
+    topics:
+      - HTML y CSS
+      - JavaScript y DOM
+      - Protocolo HTTP y APIs REST
+      - Desarrollo backend con frameworks
+      - Persistencia con bases de datos
+      - Seguridad en aplicaciones web
+
+  - code: ED
+    title: Electrónica Digital
+    ects: 6
+    description: Diseño de circuitos digitales combinacionales y secuenciales.
+    topics:
+      - Puertas lógicas y álgebra de Boole
+      - Biestables y registros
+      - Máquinas de estados finitos
+      - Descripción de hardware con VHDL
+
+  - code: IE
+    title: Instrumentación Electrónica
+    ects: 6
+    description: Sistemas de medida y acondicionamiento de señal.
+    topics:
+      - Sensores y transductores
+      - Puentes de medida
+      - Acondicionamiento de señal y amplificadores
+      - Conversión analógico-digital
